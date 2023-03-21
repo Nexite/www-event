@@ -69,7 +69,7 @@ const Page = ({
               <a href={`/${region.webname}`}>
                 <Text
                   as="span"
-                  d="inline"
+                  display="inline"
                   letterSpacing="-2px"
                   fontFamily="logo"
                   position="relative"
@@ -93,7 +93,7 @@ const Page = ({
             <Button as="a" href="https://www.codeday.org/volunteer" variant="ghost" target="_blank">{t('menu.volunteer')}</Button>
             <Button as="a" href="/organize" variant="ghost" target="_blank">{t('menu.organize')}</Button>
             <Button as="a" href="/upcoming" variant="ghost" target="_blank">{t('menu.upcoming')}</Button>
-            <Button as="a" p={0} variant="ghost" colorScheme="transparent"><LanguagePicker /></Button>
+            <Button as="a" variant="ghost" colorScheme="transparent" _hover={{ bg: 'none' }}><LanguagePicker /></Button>
           </Menu>
         </Header>
         <Main>

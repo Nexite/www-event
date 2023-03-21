@@ -16,14 +16,14 @@ export default function LanguagePicker() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   return (
-    <Box d="inline-block">
+    <Box display="inline-block">
       {
         isLoading ? <Spinner />
           : (
             <Select
-              variant="filled"
-              bg="transparent"
-              _hover={{ bg: 'transparent' }}
+              variant="unstyled"
+              // bg="transparent"
+              // _hover={{ bg: 'transparent' }}
               border="none"
               cursor="pointer"
               onChange={async (e) => {
@@ -40,7 +40,7 @@ export default function LanguagePicker() {
                   value={l}
                   title={new Intl.DisplayNames([l], { type: 'language' }).of(l)}
                   // Chakra bug forces me to do this :( (firefox only bug)
-                  style={{ backgroundColor: 'inherit' }}
+                  // style={{ backgroundColor: 'inherit' }}
                 >
                   {getFlagEmoji(new Intl.Locale(l).region) || new Intl.DisplayNames([l], { type: 'language' }).of(l)}
                 </option>

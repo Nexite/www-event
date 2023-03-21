@@ -32,7 +32,7 @@ export default function BlobImage({ src, ...props }) {
       >
         <defs>
           <clipPath id={id} clipPathUnits="objectBoundingBox">
-            <path d={path} />
+            <path display={path} />
           </clipPath>
         </defs>
       </svg>
