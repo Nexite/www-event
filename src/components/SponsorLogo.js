@@ -16,6 +16,7 @@ export default function SponsorLogo({ sponsor, ...props }) {
   const logoImage = sponsor.logo ? sponsor.logo?.url : sponsor.logoImageUri;
   const darkLogoImage = sponsor.logo ? sponsor.darkLogo?.url : sponsor.darkLogoImageUri;
   const link = sponsor.link
+    // eslint-disable-next-line no-secrets/no-secrets
     ? `${sponsor.link}?utm_source=codeday&utm_medium=webpage&utm_campaign=codeday_sponsor_${(new Date()).getFullYear()}`
     : undefined;
 

@@ -101,7 +101,7 @@ export default function Organize({ query, random }) {
         <List mb={4} ml={4} styleType="disc">
           {/* I don't really like this hack, but I cant find a better way to do it.
            * as long as the translation doesn't contain <li> it will be fine */}
-          {t('intersectional.why.2', { returnObjects: true, joinArrays: '<li>' }).split('<li>').map((item, idx) => <ListItem key={idx}>{item}</ListItem>)}
+          {t('intersectional.why.2', { returnObjects: true, joinArrays: '<li>' }).split('<li>').map((item) => <ListItem key={item}>{item}</ListItem>)}
         </List>
         <Text>
           {t('intersectional.why.3')}
@@ -112,7 +112,7 @@ export default function Organize({ query, random }) {
       <Content mt={24} mb={24} maxW="container.lg">
         <Box borderColor="red.600" borderWidth={3} rounded="sm">
           <Box color="white" bg="red.600" p={2} pl={4} pr={4}>
-            <Heading fontSize="2xl">{t('form.header')}</Heading><a name="form" />
+            <Heading fontSize="2xl" name="form">{t('form.header')}</Heading>
             <Text>{t('form.requirements')}</Text>
           </Box>
           <Box p={4}>

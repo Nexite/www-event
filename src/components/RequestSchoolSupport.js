@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-nested-template-literals */
 import { useColorMode } from '@codeday/topo/Theme';
 import {
   Box, Grid, Heading, Link, List, ListItem, Text, TextInput, Button, Image, Divider,
@@ -137,6 +138,7 @@ export default function RequestSchoolSupport({ event }) {
         <Box>
           <Text fontSize="sm" fontWeight="bold" mb={0}>{t('assistance.apply.student-names')}</Text>
           {studentNames.map((cn, i) => (
+            // eslint-disable-next-line react/no-array-index-key
             <Grid key={i} templateColumns="minmax(0, 100%) 1fr" gap={2} mb={2} maxW={96}>
               <TextInput
                 w="100%"

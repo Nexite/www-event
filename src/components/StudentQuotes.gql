@@ -2,6 +2,9 @@ fragment StudentQuotesFragment on Query {
     cms {
         testimonials(where: {program: { webname: "codeday" },type: "Student",}) {
             items {
+                sys {
+                    id
+                }
                 firstName
                 lastName
                 region {

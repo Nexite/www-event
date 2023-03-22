@@ -113,11 +113,9 @@ export default function EventHome({
           <Awards awards={awards} />
         </Grid>
       </Content>
-      <a name="theme" />
-      <Content maxWidth="container.xl">
+      <Content id="theme" maxWidth="container.xl">
         <ThemeNotifier event={event} mb={16} />
       </Content>
-      <a name="register" />
       <Content maxWidth="container.xl" mb={16}>
         <Box id="register" /> {/* used for register button */}
         <Box
@@ -145,8 +143,7 @@ export default function EventHome({
           <Schedule event={event} timezone={region.timezone} mb={12} />
         </Content>
       )}
-      <a name="quote" />
-      <Content maxWidth="container.xl" mb={16}>
+      <Content id="quote" maxWidth="container.xl" mb={16}>
         <StudentQuotes quotes={quotes} />
       </Content>
 

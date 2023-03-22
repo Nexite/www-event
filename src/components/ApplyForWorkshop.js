@@ -57,7 +57,7 @@ export default function ApplyForWorkshop({ event, alwaysOpen, ...props }) {
       <Box mb={4}>
         <FormLabel mb={0}>{t('workshop-apply.form.role.label')}</FormLabel>
         <Select onChange={(e) => setBio(e.target.value)}>
-          <option />
+          <option aria-label="default" />
           <option>{t('workshop-apply.form.role.attendee')}</option>
           <option>{t('workshop-apply.form.role.former-attendee')}</option>
           <option>{t('workshop-apply.form.role.company-representative')}</option>
